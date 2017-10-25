@@ -9,8 +9,6 @@ gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'jquery-rails'
 
-gem 'pg'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use Puma as the app server
@@ -59,5 +57,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-  gem 'rails_12factor', '0.0.2'
+  gem 'pg'
+  gem 'rails_12factor'
 end
